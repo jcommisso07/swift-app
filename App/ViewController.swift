@@ -9,10 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var label: UILabel!
+   var tapCount = 0
+    
+    @IBAction func tapped(_ sender: AnyObject) {
+        label.text = "Hello"
+        tapCount = tapCount + 1
+        print(tapCount)
+        if tapCount >= 10 {
+    label.text = "Stop"
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,4 +35,3 @@ class ViewController: UIViewController {
 
 
 }
-
