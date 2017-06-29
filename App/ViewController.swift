@@ -4,7 +4,7 @@
 //
 //  Created by Joseph Commisso on 6/22/17.
 //  Copyright © 2017 Joseph Commisso. All rights reserved.
-//
+//comment
 
 import UIKit
 
@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         label.text = "Hello"
         tapCount = tapCount + 1
         print(tapCount)
-        if tapCount >= 10 {
+        if tapCount >= 20 {
     label.text = "Stop"
         }
     }
